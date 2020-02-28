@@ -1,0 +1,66 @@
+﻿@model RentingSystem.Models.RentingDetails
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>RentingDetails</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RenterFirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RenterFirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReleaseDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReleaseDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MovieTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MovieTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberofMovies)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumberofMovies)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Duration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Duration)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
